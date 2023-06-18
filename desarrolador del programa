@@ -1,0 +1,29 @@
+El Método de Newton-Raphson es un algoritmo utilizado para encontrar aproximaciones sucesivas de las raíces de una función. A continuación, se presenta un manual breve para los desarrolladores que deseen implementar este método en su código.
+
+Definición del problema:
+Antes de comenzar, es importante comprender el problema y tener claro qué función se desea encontrar las raíces y en qué rango. Asegúrate de tener una comprensión sólida de las matemáticas detrás del método.
+
+Selección del punto inicial:
+El método de Newton-Raphson requiere un punto inicial cerca de la raíz que se desea encontrar. Es importante seleccionar un punto lo más cercano posible a la raíz para garantizar una convergencia adecuada. Esto se puede hacer mediante una inspección visual del gráfico de la función o utilizando otras técnicas.
+
+Implementación de la función y su derivada:
+Es necesario implementar la función y su derivada en el lenguaje de programación que estés utilizando. Asegúrate de que la función y su derivada estén correctamente definidas y sean continuas en el rango de interés. Puedes utilizar bibliotecas o funciones incorporadas para calcular la derivada numéricamente si es necesario.
+
+Iteración del método:
+Implementa un bucle iterativo que calcule las aproximaciones sucesivas utilizando la fórmula del método de Newton-Raphson. La fórmula general para la iteración es:
+
+x_(n+1) = x_n - f(x_n)/f'(x_n)
+
+Donde x_n es la aproximación actual de la raíz, f(x_n) es el valor de la función evaluada en x_n, y f'(x_n) es la derivada de la función evaluada en x_n.
+
+Criterio de convergencia:
+Establece un criterio de convergencia para finalizar el bucle iterativo. Puedes considerar criterios como la diferencia absoluta entre dos iteraciones consecutivas o la diferencia relativa en la función evaluada en cada iteración. También puedes definir un número máximo de iteraciones para evitar que el bucle se ejecute indefinidamente.
+
+Manejo de casos especiales:
+El método de Newton-Raphson puede presentar casos especiales, como divisiones por cero o derivadas que se anulan en algún punto. Asegúrate de manejar estos casos adecuadamente en tu implementación para evitar errores o resultados incorrectos.
+
+Pruebas y validación:
+Realiza pruebas exhaustivas de tu implementación utilizando diferentes funciones y puntos iniciales. Compara los resultados obtenidos con soluciones conocidas o utilizando métodos alternativos para verificar la precisión y la convergencia de tu implementación.
+
+Optimización y mejoras:
+Si es necesario, puedes explorar técnicas de optimización para mejorar el rendimiento del algoritmo, como el uso de técnicas de aceleración de convergencia o la optimización del cálculo de la derivada.
